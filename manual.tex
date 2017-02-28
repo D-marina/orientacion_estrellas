@@ -1,30 +1,30 @@
-\documentclass[12pt]{memoir}
-\usepackage[spanish]{babel}
-%\usepackage{geometry}
-%\geometry{a4paper, margin=0.7in}
-%\usepackage[final,1to1]{booklet}
+\documentclass[11pt,a5paper,twoside]{amsbook}
 % \usepackage{doclicense}
 \usepackage[utf8]{inputenc}
-\usepackage{baskervald}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{commath}
+%\usepackage[T1]{fontenc}
 
-%opening
+
+\input{Macros_Nuevas.tex}
+
 \title{Orientarse de noche}
+\date{Marzo de 2.017}
 
 \begin{document}
 
-\maketitle
-% 
-\begin{abstract}
+\selectlanguage{spanish}
+\titulo
+
+\tableofcontents
+
+\cleardoublepage
+
+\begin{sumario}[Introducci\'on]
 Orientarse no es sino obtener información que nos permita dirigir nuestros pasos (o nuestro coche, nuestro barco o nuestra nave espacial) en la dirección adecuada. Desde muy antiguo la humanidad se ha servido de los astros para encontrar esa información, pero el desarrollo de la tecnología (empezando por la invención de la brújula en el siglo IX d.C. en China, hasta los sistemas de posicionamiento global actuales) ha provocado el abandono paulatino de la orientación mediante signos naturales. No obstante, dada la relativa fragilidad de estos sistemas, es posible vernos envueltos en situaciones en las que sea preciso obtener la información suficiente para dirigir nuestro camino basándonos en la información que nos proporcione la propia Naturaleza y, de entre todas las señales que tenemos a nuestra disposición, las más fiables son las que recibimos a través de la observación del cielo.
-\end{abstract}
+\end{sumario}
 
-\section{\textit{Cómo funciona} el firmamento}
+\section{C\'omo funciona el firmamento}
 
-Imaginemos que la Tierra se encuentra en un estadio de atletismo. El Sol está en el centro del estadio y nosotros estamos corriendo por la pista. Tardamos un año entero en dar una vuelta a la pista y cada día que pasa damos una vuelta sobre nosotros mismos. Las gradas del estadio son el fondo de estrellas del firmamento. 
+Imaginemos que la Tierra se encuentra en un estadio de atletismo. El Sol está en el centro del estadio y nosotros estamos corriendo por la pista. Tardamos un año entero en dar una vuelta a la pista y cada día que pasa damos una vuelta sobre nosotros mismos. Las gradas del estadio son el fondo de estrellas del firmamento.
 
 % \vspace*{0.4in}
 
@@ -67,7 +67,7 @@ De igual manera que la posición de un punto sobre la tierra se identifica por s
 
 Estos conceptos quedan ilustrados en la figura \ref{coordenadas}. Pero como todo sistema de coordenadas, es necesario definir el origen del sistema. En el caso de las coordenadas geográficas, el origen de la latitud es el ecuador terrestre; el de la longitud es el meridiano que pasa por el Observatorio de Greenwich, en Reino Unido. La latitud es positiva al norte del ecuador y negativa al sur; en cuanto a la longitud, es positiva hacia el este y negativa hacia el oeste.
 
-En el caso de las coordenadas celestes ecuatoriales el origen de la declinación se encuentra en el ecuador celeste y el de la ascensión recta en el meridiano celeste que pasa por el denominado \textit{Punto Aries}, cuya definición se omitirá debido a su mayor complejidad. Mientras que la declinación se indica en grados, como en el caso de las coordenadas geográficas, la A.R. se indica en horas. Así, las coordenadas celestes de Mizar (una de las estrellas del carro de la Osa Mayor) son de Dec. = +54\textdegree 55' 31'' y su A.R. = 13 h 23 min 55.5 s. 
+En el caso de las coordenadas celestes ecuatoriales el origen de la declinación se encuentra en el ecuador celeste y el de la ascensión recta en el meridiano celeste que pasa por el denominado \textit{Punto Aries}, cuya definición se omitirá debido a su mayor complejidad. Mientras que la declinación se indica en grados, como en el caso de las coordenadas geográficas, la A.R. se indica en horas. Así, las coordenadas celestes de Mizar (una de las estrellas del carro de la Osa Mayor) son de Dec. = +54\textdegree 55' 31'' y su A.R. = 13 h 23 min 55.5 s.
 
 La declinación es positiva al norte del ecuador celeste y megativa al sur, de manera análoga a las coordenadas geográficas.
 
@@ -79,14 +79,14 @@ En la figura \ref{coordenadas} se identifica un punto del cielo conocido como \t
 El movimiento aparente\footnote{Recordemos que el movimiento de los astros que observamos en el firmamento obedece a la rotación de la tierra y no al movimiento real de los mismos} de los objetos celestes es diferente según la latitud del observador. En general, la A.R. de los objetos visibles desde un punto dado de la Tierra es la comprendida 90\textdegree a cada lado del cénit. Como hemos dicho, la declinación del cénit corresponde a la latitud del observador, con lo cual:
 
 \begin{itemize}
- \item Para el horizonte N, basta con restar a 90\textdegree el \textit{valor absoluto} de la latitud: 
+ \item Para el horizonte N, basta con restar a 90\textdegree el \textit{valor absoluto} de la latitud:
  \[Dec. N = 90 - \abs{\varphi}\]
  \item Para el horizonte S, basta con sumar a -90\textdegree el \textit{valor absoluto} de la latitud:
  \[Dec. S = -90 + \abs{\varphi}\]
 \end{itemize}
 
 
-Si nos fijamos en la figura \ref{tierra_esfera}, el eje de rotación terrestre atraviesa la tierra y la esfera celeste por los polos. Si estuviéramos situados directamente sobre uno de los polos y pudiéramos visualizar ese eje sobre el terreno, lo veríamos salir del suelo y dirigirse a un punto concreto del cielo: el correspondiente polo celeste. Un observador situado en cualquiera de los dos polos terrestres ($\varphi$=90\textdegree  N o S), si mira hacia su cénit estará contemplando, por tanto, el polo celeste. 
+Si nos fijamos en la figura \ref{tierra_esfera}, el eje de rotación terrestre atraviesa la tierra y la esfera celeste por los polos. Si estuviéramos situados directamente sobre uno de los polos y pudiéramos visualizar ese eje sobre el terreno, lo veríamos salir del suelo y dirigirse a un punto concreto del cielo: el correspondiente polo celeste. Un observador situado en cualquiera de los dos polos terrestres ($\varphi$=90\textdegree  N o S), si mira hacia su cénit estará contemplando, por tanto, el polo celeste.
 
 Si nos encontrásemos en el hemisferio norte, tanto el horizonte sur como el norte se encontrarían en el ecuador celeste (ya que 90\textdegree - $\varphi$=0\textdegree) y, por tanto, las estrellas se moverían en círculos directamente encima del  observador y nunca se pondrían. Sólo son visibles los objetos celestes cuyas declinación estén comprendidas entre los 0º y los 90º, es decir, únicamente los situados en el hemisferio norte celeste, durante todas las noches del año\footnote{En el caso extremo de los polos, sólo hay una noche en el año, que dura 6 meses}. En el hemisferio sur ocurriría exatamente lo mismo, pero en este caso sólo veríamos los objetos australes.
 
@@ -104,13 +104,13 @@ A estos últimos objetos se les denomina \textit{circumpolares}, y son de capita
 
 Por ejemplo, para el caso de Cádiz, cuya $\varphi$=36.5\textdegree, el polo celeste se encuentra al 36,5\textdegree sobre el horizonte, aproximadamente, por lo que los horizontes N y S se encuentran a  90\textdegree - 36.5\textdegree = 53.5\textdegree de latitud N o S. Todas los objetos situados por debajo de la latitud 53.5\textdegree S no serán visibles nunca. Los objetos entre los 53.5\textdegree de latitud S y los 53.5\textdegree de latitud N tendran su orto y ocaso diario, mientras que los comprendidos entre los 53.5\textdegree y 90\textdegree de latitud N serán circumpolares.
 
-En el caso del hemisferio sur el fenómeno es idéntico, salvo que los objetos circumpolares los son con respecto al polo celeste sur y los objetos invisibles se encuentran en el hemisferio norte. 
+En el caso del hemisferio sur el fenómeno es idéntico, salvo que los objetos circumpolares los son con respecto al polo celeste sur y los objetos invisibles se encuentran en el hemisferio norte.
 
 \section{La orientación mediante el firmamento}
 
 Como se dijo en la introducción orientarse es obtener la información suficiente que permita  dirigir nuestro camino en la dirección adecuada. Esto significa ser capaz de localizar sobre el terreno los puntos cardinales y usar esa información para leer correctamente un mapa o, mediante los conocimientos de la zona en la que nos encontramos,
 
-No todos los métodos de orientación son igual de precisos: algunos de precisión relativamente alta no están siempre disponibles y/o son relativamente prácticos debido a que la obtención de resultados conlleva esperas prolongadas. Pero por diferentes razones puede ser necesario hacer uso de métodos menos fiables si las condiciones lo requieren. 
+No todos los métodos de orientación son igual de precisos: algunos de precisión relativamente alta no están siempre disponibles y/o son relativamente prácticos debido a que la obtención de resultados conlleva esperas prolongadas. Pero por diferentes razones puede ser necesario hacer uso de métodos menos fiables si las condiciones lo requieren.
 
 En general se debe tratar de emplear siempre el método más preciso en función de las circunstancias existentes. Así, por ejemplo, no tiene sentido intentar orientarse por la estrella Polar en latitudes muy próximas al ecuador o del hemisferio sur, o en un valle cuyas montañas la oculten. En estos casos, deberemos buscar un método alternativo escogiendo aquel que nos permita una mejor localización de los puntos cardinales.
 
